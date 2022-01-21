@@ -1,0 +1,128 @@
+$textcolor:#299934;
+$textmenucolor:black;
+$bodycolor:#D7D7D7D7;
+$headercolor:#FFA945;
+$footercolor:#636363;
+$menucolor:white;
+@mixin dajc{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(/alfa-slab-one/AlfaSlabOne-Regular.ttf);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header h1 {
+    color: $textcolor;
+    font-family: myfont;
+    @include dajc() 
+  }
+  
+  body {
+    background-color:$bodycolor;
+  }
+  
+  header {
+    background-color: $headercolor;
+    height: 80px;
+    padding: 15px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  main a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    height: 15px;
+    padding: 30px;
+    background-color: $menucolor;
+    color:$textmenucolor;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 80px;
+    border-radius: 20px 20px;
+    transition: ease-out 0.4s;
+  }
+  
+  main a:hover {
+    color: $textcolor;
+    box-shadow: inset 1200px 0 0 0 $headercolor;
+    cursor: pointer;
+  }  
+
+  footer {
+    background-color: $footercolor;
+    height: 125px;
+    padding: 20px;
+    margin-top: 444px;
+  }
+  
+  footer a {
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    font-family: Arial;
+    text-decoration: none;
+  }
+  
+  footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+  }
+  
+  footer nav a:hover {
+    color: #cf4a11;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+  
+  footer p {
+    padding: 1px;
+    margin-left: -15px;
+  }
+  /*# sourceMappingURL=style.css.map */
