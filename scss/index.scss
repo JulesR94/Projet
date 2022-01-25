@@ -37,6 +37,9 @@ $footercolor:#636363;
     height: 60px;
     padding: 15px;
   }
+  .desktop{
+    display: none;
+  }
   
   header nav a {
     text-decoration: none;
@@ -56,7 +59,6 @@ $footercolor:#636363;
     list-style-type: none;
     margin-top: 11px;
   }
-  
   img {
     width: 100%;
     height: 400px;
@@ -173,6 +175,8 @@ $footercolor:#636363;
   }
     }
 
+
+
   /*Media queries pour tablette*/
   @media screen and (min-width:601px) and (max-width:1023px) {
     * {
@@ -195,7 +199,7 @@ $footercolor:#636363;
     
     header {
       background-color: $headercolor;
-      height: 80px;
+      height: 60px;
       padding: 15px;
     }
     
@@ -215,9 +219,8 @@ $footercolor:#636363;
           -ms-flex-pack: justify;
               justify-content: space-between;
       list-style-type: none;
-      margin-top: 25px;
+      margin-top: 13px;
     }
-    
     img {
       width: 50%;
       height: 400px;
@@ -330,13 +333,22 @@ $footercolor:#636363;
       overflow: auto;
     }
   }
+
+
   /*Media Queiries pour Desktop*/
   @media screen and (min-width:1024px) {
     * {
       margin: 0;
       padding: 0;
     }
-    
+    body {
+      background-color: $bodycolor;
+    }
+    header {
+      background-color: $headercolor;
+      height: 80px;
+      padding: 15px;
+    }
     header h1 {
       color: $textcolor;
       font-family: myfont;
@@ -345,18 +357,6 @@ $footercolor:#636363;
       justify-content: center;
       font-size: 1.5rem; 
     }
-    
-    body {
-      background-color: $bodycolor;
-    }
-    
-    header {
-      background-color: $headercolor;
-      height: 80px;
-      padding: 15px;
-      opacity: 0.2;
-    }
-    
     header nav a {
       text-decoration: none;
       color: black;
@@ -364,11 +364,6 @@ $footercolor:#636363;
       font-weight: bold;
       font-size: 1rem;
     }
-    header a:hover{
-        color: $textcolor;
-        font-family: myfont;
-    }
-    
     header nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -378,17 +373,7 @@ $footercolor:#636363;
               justify-content: space-between;
       list-style-type: none;
       margin-top: 25px;
-    }
-    .mobil {
-      display: none;
-    }
-    
-    img {
-      width: 100%;
-      height: 400px;
-      padding:0px;
-      margin: 0;
-    }
+    }  
     
     .acc a {
       text-decoration: none;
@@ -501,7 +486,10 @@ $footercolor:#636363;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      display: none;
+      width: 50%;
+      height: 400px;
+      padding:0px;
+      margin: 0;
     }
     
     #defil {

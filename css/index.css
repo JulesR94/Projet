@@ -31,6 +31,9 @@
     height: 60px;
     padding: 15px;
   }
+  .desktop {
+    display: none;
+  }
   header nav a {
     text-decoration: none;
     color: black;
@@ -180,7 +183,7 @@
   }
   header {
     background-color: #FFA945;
-    height: 80px;
+    height: 60px;
     padding: 15px;
   }
   header nav a {
@@ -198,7 +201,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 13px;
   }
   img {
     width: 50%;
@@ -313,6 +316,14 @@
     margin: 0;
     padding: 0;
   }
+  body {
+    background-color: #D7D7D7D7;
+  }
+  header {
+    background-color: #FFA945;
+    height: 80px;
+    padding: 15px;
+  }
   header h1 {
     color: #299934;
     font-family: myfont;
@@ -327,25 +338,12 @@
             justify-content: center;
     font-size: 1.5rem;
   }
-  body {
-    background-color: #D7D7D7D7;
-  }
-  header {
-    background-color: #FFA945;
-    height: 80px;
-    padding: 15px;
-    opacity: 0.2;
-  }
   header nav a {
     text-decoration: none;
     color: black;
     font-family: Arial;
     font-weight: bold;
     font-size: 1rem;
-  }
-  header a:hover {
-    color: #299934;
-    font-family: myfont;
   }
   header nav ul {
     display: -webkit-box;
@@ -356,15 +354,6 @@
     justify-content: space-between;
     list-style-type: none;
     margin-top: 25px;
-  }
-  .mobil {
-    display: none;
-  }
-  img {
-    width: 100%;
-    height: 400px;
-    padding: 0px;
-    margin: 0;
   }
   .acc a {
     text-decoration: none;
@@ -469,7 +458,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: none;
+    width: 50%;
+    height: 400px;
+    padding: 0px;
+    margin: 0;
   }
   #defil {
     overflow: auto;
