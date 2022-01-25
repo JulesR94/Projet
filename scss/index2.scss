@@ -16,7 +16,7 @@ $menucolor:white;
   }
 
   /*Media queries pour mobile$*/
-  @media only screen and (max-width:425px) {
+  @media only screen and (max-width:600px) {
 
   * {
     margin: 0;
@@ -78,9 +78,7 @@ $menucolor:white;
     padding: 30px;
     background-color: $menucolor;
     color:$textmenucolor;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 60px;
+    margin: 10% 10% 0% 10%;
     border-radius: 20px 20px;
   }
   
@@ -127,7 +125,7 @@ $menucolor:white;
 }
 
  /*Media queries pour tablette*/
- @media screen and (min-width:426px) and (max-width:1023px){
+ @media screen and (min-width:601px) and (max-width:1023px){
   * {
     margin: 0;
     padding: 0;
@@ -206,7 +204,7 @@ $menucolor:white;
     background-color: $footercolor;
     height: 125px;
     padding: 20px;
-    margin-top: 444px;
+    margin-top: 16%;
   }
   
   footer a {
@@ -323,7 +321,7 @@ $menucolor:white;
     background-color: $footercolor;
     height: 125px;
     padding: 20px;
-    margin-top: 444px;
+    margin-top: 60px;
   }
   
   footer a {

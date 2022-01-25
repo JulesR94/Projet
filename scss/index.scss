@@ -2,6 +2,11 @@ $textcolor:#299934;
 $bodycolor:#D7D7D7D7;
 $headercolor:#FFA945;
 $footercolor:#636363;
+@mixin dajc{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 
 @font-face {
     font-family: myfont;
@@ -10,7 +15,7 @@ $footercolor:#636363;
 
   /*Media queries pour mobile$*/
   
-  @media only screen and (max-width:425px) {
+  @media only screen and (max-width:600px){
   * {
     margin: 0;
     padding: 0;
@@ -19,9 +24,7 @@ $footercolor:#636363;
   header h1 {
     color: $textcolor;
     font-family: myfont;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dajc();
     font-size: 1.5rem; 
   }
   
@@ -76,10 +79,7 @@ $footercolor:#636363;
     -webkit-transition: color .3s;
     transition: color .3s;
   }
-  
-  .acc a:hover {
-    color: $textcolor;
-  }  
+   
   h2 {
     font-weight: bold;
     color: $textcolor;
@@ -92,7 +92,7 @@ $footercolor:#636363;
   .present {
     color:$textcolor;
     font-family: Arial;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
     margin: 20px 5% 0;
@@ -157,12 +157,6 @@ $footercolor:#636363;
     list-style-type: none;
   }
   
-  footer nav a:hover {
-    color: #cf4a11;
-    -webkit-transition: color .3s;
-    transition: color .3s;
-  }
-  
   footer p {
     padding: 1px;
     margin-left: -15px;
@@ -177,14 +171,10 @@ $footercolor:#636363;
   #defil {
     overflow: auto;
   }
- #defil img {
-  -webkit-transition: all 0.5s ease;
-    transition: .3s ease-in-out;
-}
-  }
+    }
 
   /*Media queries pour tablette*/
-  @media screen and (min-width:426px) and (max-width:1023px) {
+  @media screen and (min-width:601px) and (max-width:1023px) {
     * {
       margin: 0;
       padding: 0;
@@ -229,7 +219,7 @@ $footercolor:#636363;
     }
     
     img {
-      width: 100%;
+      width: 50%;
       height: 400px;
       padding:0px;
       margin: 0;
@@ -250,10 +240,6 @@ $footercolor:#636363;
       -webkit-transition: color .3s;
       transition: color .3s;
     }
-    
-    .acc a:hover {
-      color: $textcolor;
-    }  
     h2 {
       font-weight: bold;
       color: $textcolor;
@@ -261,17 +247,13 @@ $footercolor:#636363;
       text-align: center;
       margin-top: 20px;
     }
-    
-  
     .present {
       color:$textcolor;
       font-family: Arial;
       font-size: 22px;
       text-align: center;
       font-weight: bold;
-      margin-top: 20px;
-      margin-left: 30%;
-      margin-right: 30%;
+      margin: 2% 20% 2% 20%;
       display: flex;
       align-items: center;
     }
@@ -308,7 +290,7 @@ $footercolor:#636363;
       background-color: $footercolor;
       height: 125px;
       padding: 20px;
-      margin-top: 60px;
+      margin-top: 14%;
     }
     
     footer a {
@@ -317,6 +299,7 @@ $footercolor:#636363;
       font-size: small;
       font-family: Arial;
       text-decoration: none;
+      
     }
     
     footer nav ul {
@@ -331,14 +314,7 @@ $footercolor:#636363;
           -ms-flex-align: center;
               align-items: center;
       list-style-type: none;
-    }
-    
-    footer nav a:hover {
-      color: #cf4a11;
-      -webkit-transition: color .3s;
-      transition: color .3s;
-    }
-    
+    }  
     footer p {
       padding: 1px;
       margin-left: -15px;
@@ -352,14 +328,6 @@ $footercolor:#636363;
     
     #defil {
       overflow: auto;
-    }
-   #defil img {
-    -webkit-transition: all 0.5s ease;
-      transition: .3s ease-in-out;
-    }
-    #defil img:hover {
-      -webkit-transform: rotate(-15deg);
-      transform: scale(1.3);
     }
   }
   /*Media Queiries pour Desktop*/
@@ -533,10 +501,11 @@ $footercolor:#636363;
    #defil img {
     -webkit-transition: all 0.5s ease;
       transition: .3s ease-in-out;
+      transform: scale(1.1);
     }
     #defil img:hover {
       -webkit-transform: rotate(-15deg);
-      transform: scale(1.3);
+      transform: scale(.9);
     }
   }
 

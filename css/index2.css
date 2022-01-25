@@ -4,7 +4,7 @@
 }
 
 /*Media queries pour mobile$*/
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   * {
     margin: 0;
     padding: 0;
@@ -66,9 +66,7 @@
     padding: 30px;
     background-color: white;
     color: black;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 60px;
+    margin: 10% 10% 0% 10%;
     border-radius: 20px 20px;
   }
   footer {
@@ -109,7 +107,7 @@
 }
 
 /*Media queries pour tablette*/
-@media screen and (min-width: 426px) and (max-width: 1023px) {
+@media screen and (min-width: 601px) and (max-width: 1023px) {
   * {
     margin: 0;
     padding: 0;
@@ -189,7 +187,7 @@
     background-color: #636363;
     height: 125px;
     padding: 20px;
-    margin-top: 444px;
+    margin-top: 16%;
   }
   footer a {
     color: white;
@@ -303,7 +301,7 @@
     background-color: #636363;
     height: 125px;
     padding: 20px;
-    margin-top: 444px;
+    margin-top: 60px;
   }
   footer a {
     color: white;
