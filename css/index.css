@@ -334,13 +334,18 @@
     background-color: #FFA945;
     height: 80px;
     padding: 15px;
+    opacity: 0.2;
   }
   header nav a {
     text-decoration: none;
     color: black;
     font-family: Arial;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  header a:hover {
+    color: #299934;
+    font-family: myfont;
   }
   header nav ul {
     display: -webkit-box;
@@ -351,6 +356,9 @@
     justify-content: space-between;
     list-style-type: none;
     margin-top: 25px;
+  }
+  .mobil {
+    display: none;
   }
   img {
     width: 100%;
@@ -461,6 +469,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: none;
   }
   #defil {
     overflow: auto;

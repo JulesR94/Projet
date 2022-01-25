@@ -354,6 +354,7 @@ $footercolor:#636363;
       background-color: $headercolor;
       height: 80px;
       padding: 15px;
+      opacity: 0.2;
     }
     
     header nav a {
@@ -361,7 +362,11 @@ $footercolor:#636363;
       color: black;
       font-family: Arial;
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1rem;
+    }
+    header a:hover{
+        color: $textcolor;
+        font-family: myfont;
     }
     
     header nav ul {
@@ -373,6 +378,9 @@ $footercolor:#636363;
               justify-content: space-between;
       list-style-type: none;
       margin-top: 25px;
+    }
+    .mobil {
+      display: none;
     }
     
     img {
@@ -493,6 +501,7 @@ $footercolor:#636363;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      display: none;
     }
     
     #defil {
