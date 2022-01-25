@@ -9,6 +9,17 @@
     margin: 0;
     padding: 0;
   }
+  body {
+    background-color: #D7D7D7D7;
+  }
+  header {
+    background-color: #FFA945;
+    height: 60px;
+    padding: 15px;
+  }
+  .desktop {
+    display: none;
+  }
   header h1 {
     color: #299934;
     font-family: myfont;
@@ -22,17 +33,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.5rem;
-  }
-  body {
-    background-color: #D7D7D7D7;
-  }
-  header {
-    background-color: #FFA945;
-    height: 60px;
-    padding: 15px;
-  }
-  .desktop {
-    display: none;
   }
   header nav a {
     text-decoration: none;
@@ -50,12 +50,6 @@
     justify-content: space-between;
     list-style-type: none;
     margin-top: 11px;
-  }
-  img {
-    width: 100%;
-    height: 400px;
-    padding: 0px;
-    margin: 0;
   }
   .acc a {
     text-decoration: none;
@@ -152,6 +146,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0;
   }
   #defil {
     overflow: auto;
@@ -163,6 +161,9 @@
   * {
     margin: 0;
     padding: 0;
+  }
+  body {
+    background-color: #D7D7D7D7;
   }
   header h1 {
     color: #299934;
@@ -177,9 +178,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.5rem;
-  }
-  body {
-    background-color: #D7D7D7D7;
   }
   header {
     background-color: #FFA945;
@@ -202,12 +200,6 @@
     justify-content: space-between;
     list-style-type: none;
     margin-top: 13px;
-  }
-  img {
-    width: 50%;
-    height: 400px;
-    padding: 0px;
-    margin: 0;
   }
   .acc a {
     text-decoration: none;
@@ -304,6 +296,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 50%;
+    height: 400px;
+    padding: 0px;
+    margin: 0;
   }
   #defil {
     overflow: auto;
@@ -317,12 +313,15 @@
     padding: 0;
   }
   body {
-    background-color: #D7D7D7D7;
+    background-image: url(/moodboard/AfriknFusion_AfriknMixAgneau.png);
+    background-size: cover;
+    z-index: -1;
   }
   header {
     background-color: #FFA945;
     height: 80px;
     padding: 15px;
+    opacity: 0.8;
   }
   header h1 {
     color: #299934;
@@ -355,6 +354,9 @@
     list-style-type: none;
     margin-top: 25px;
   }
+  .mobil {
+    display: none;
+  }
   .acc a {
     text-decoration: none;
     text-align: center;
@@ -365,7 +367,7 @@
     background-color: #FFA945;
     color: #cf4a11;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 70px;
     border-radius: 20px/ 20px;
     -webkit-transition: color .3s;
     transition: color .3s;
@@ -386,13 +388,19 @@
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    margin: 2% 20% 5% 20%;
+    margin: 5% 20% 5% 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #ffa845bb;
+    border-radius: 15px;
   }
   .acc {
     display: -webkit-box;
@@ -402,6 +410,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 5%;
   }
   #icon img {
     width: 60px;
@@ -417,13 +426,18 @@
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-bottom: 1.7%;
+    position: relative;
+  }
+  main h2 {
+    padding-bottom: 20px;
   }
   footer {
     background-color: #636363;
     height: 125px;
     padding: 20px;
-    margin-top: 60px;
+    margin-top: -4.4%;
+    opacity: 0.9;
   }
   footer a {
     color: white;
@@ -462,6 +476,7 @@
     height: 400px;
     padding: 0px;
     margin: 0;
+    display: none;
   }
   #defil {
     overflow: auto;
