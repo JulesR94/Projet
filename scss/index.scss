@@ -77,6 +77,7 @@ $footercolor:#636363;
     font-family: Arial;
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 15px;
   }
   
 
@@ -89,6 +90,8 @@ $footercolor:#636363;
     margin: 20px 5% 0;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
   }
   
   .acc {
@@ -100,6 +103,11 @@ $footercolor:#636363;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  
+  #icon2 img {
+    display: none;
+  }
+  
   
   #icon img {
     width: 60px;
@@ -166,6 +174,18 @@ $footercolor:#636363;
   #defil {
     overflow: auto;
   }
+  .present2{
+    display: none;
+  }
+  .images2{
+    display: none;
+  }
+.firstpage{
+  display: none;
+}
+.audio{
+  display: none;
+}
     }
 
 
@@ -232,6 +252,7 @@ $footercolor:#636363;
       font-family: Arial;
       text-align: center;
       margin-top: 20px;
+      padding-bottom: 20px;
     }
     .present {
       color:$textcolor;
@@ -242,6 +263,8 @@ $footercolor:#636363;
       margin: 2% 20% 2% 20%;
       display: flex;
       align-items: center;
+      flex-direction: column;
+      padding-bottom: 20px;
     }
     
     .acc {
@@ -253,7 +276,9 @@ $footercolor:#636363;
           -ms-flex-direction: column;
               flex-direction: column;
     }
-    
+    #icon2 img {
+      display: none;
+    }
     #icon img {
       width: 60px;
       height: 60px;
@@ -269,14 +294,14 @@ $footercolor:#636363;
               flex-direction: row;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      margin-top: 40px;
+      margin-top: 80px;
     }
     
     footer {
       background-color: $footercolor;
       height: 125px;
       padding: 20px;
-      margin-top: 14%;
+      margin-top: 65px;
     }
     
     footer a {
@@ -319,8 +344,23 @@ $footercolor:#636363;
     #defil {
       overflow: auto;
     }
+    .present2{
+      display: none;
+    }
+    .images2{
+      display: none;
+    }
+  .firstpage{
+    display: none;
   }
-
+  #musicplayer{
+    display: none;
+  }
+  .audio{
+    display: none;
+  }
+  }
+  
 
   /*Media Queiries pour Desktop*/
   @media screen and (min-width:1024px) {
@@ -328,41 +368,64 @@ $footercolor:#636363;
       margin: 0;
       padding: 0;
     }
-    body{
-      background-image: url(/moodboard/AfriknFusion_AfriknMixAgneau.png);
-      background-size: cover;
-      z-index: -1;
+    .firstpage img{
+      width: 100%;
     }
-    header {
+    .banner1{
       background-color: $headercolor;
-      height: 80px;
+      height: 60px;
       padding: 15px;
-      opacity: 0.8;
     }
-    header h1 {
+    .banner1 h1{
       color: $textcolor;
       font-family: myfont;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
     }
-    header nav a {
+    .firstpage nav a{
       text-decoration: none;
       color: black;
       font-family: Arial;
       font-weight: bold;
       font-size: 1rem;
+      transition:1s ease-in-out;
+      /* transform: .5s scale(-1); */
     }
-    header nav ul {
+    .firstpage a:hover{
+      text-decoration:overline;
+      font-family: myfont;
+      color: $textcolor;
+      transition: 0.6s ease-in;
+    }
+    .firstpage nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between;
+              justify-content: space-around;
       list-style-type: none;
-      margin-top: 25px;
+      margin-top: -25px;
+    } 
+  
+    body{
+      background-color: $bodycolor;
+      background-size: cover;
+      z-index: -1;
+    }
+    header {
+      display: none;
+    }
+    header h1 {
+      display: none; 
+    }
+    header nav a {
+      display: none;
+    }
+    header nav ul {
+      display: none;
     }  
     .mobil{
       display: none;
@@ -394,17 +457,22 @@ $footercolor:#636363;
       margin-top: 20px;
     }
     .present {
+      display: none;
+    }
+    .present2 {
       color:$textcolor;
       font-family: Arial;
       font-size: 20px;
       text-align: center;
       font-weight: bold;
-      margin: 5% 20% 5% 20%;
+      margin: -1% 20% 1% 20%;
       display: flex;
       align-items: center;
       flex-direction: column;
-      background-color: #ffa845bb;
       border-radius: 15px;
+    }
+    .present2 p{
+      margin-bottom: 30px;
     }
     
     .acc {
@@ -417,34 +485,30 @@ $footercolor:#636363;
               flex-direction: column;
               margin-bottom: 5%;
     }
-    
-    #icon img {
-      width: 60px;
-      height: 60px;
+    #icon{
+      display: none;
+    }
+    #icon2 img {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
     }
     
-    #icon {
-      display: -webkit-box;
-      display: -ms-flexbox;
+    #icon2 {
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-          margin-bottom: 1.7%;
-          position: relative;
+      justify-content: flex-end;
+      align-items:flex-end;
+      margin-top: -52px;
     }
     main h2{
       padding-bottom: 20px;
+      padding-top: 10px;
     }
     
-    footer {
+    footer{
       background-color: $footercolor;
-      height: 125px;
+      height: 110px;
       padding: 20px;
-      margin-top: -4.4%;
       opacity: 0.9;
     }
     
@@ -478,10 +542,14 @@ $footercolor:#636363;
     
     footer p {
       padding: 1px;
-      margin-left: -15px;
+      margin-left: 1px;
+      margin-top: -2%;
     }
     
     .images {
+      display: none;
+    }
+    .images2 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -489,24 +557,10 @@ $footercolor:#636363;
       height: 400px;
       padding:0px;
       margin: 0;
-      display: none;
     }
-    
     #defil {
       overflow: auto;
     }
-   #defil img {
-    -webkit-transition: all 0.5s ease;
-      transition: .3s ease-in-out;
-      transform: scale(1.1);
-    }
-    #defil img:hover {
-      -webkit-transform: rotate(-15deg);
-      transform: scale(.9);
-    }
   }
 
-   
-
-
-  /*# sourceMappingURL=style.css.map */
+    /*# sourceMappingURL=style.css.map */

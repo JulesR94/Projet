@@ -283,12 +283,12 @@
     padding: 30px;
     background-color: white;
     color: black;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 260px;
+    margin-right: 260px;
     margin-top: 80px;
     border-radius: 20px 20px;
-    -webkit-transition: ease-out .2s;
-    transition: ease-out .2s;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
   }
   main a:hover {
     color: #299934;

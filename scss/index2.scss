@@ -303,11 +303,11 @@ $menucolor:white;
     padding: 30px;
     background-color: $menucolor;
     color:$textmenucolor;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 260px;
+    margin-right: 260px;
     margin-top: 80px;
     border-radius: 20px 20px;
-    transition: ease-out .2s;
+    transition: all 1s ease-out;
   }
   
   main a:hover {
