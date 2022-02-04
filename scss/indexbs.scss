@@ -1,0 +1,272 @@
+$textcolor:#299934;
+$bodycolor:#D7D7D7D7;
+$headercolor:#FFA945;
+$footercolor:#636363;
+@mixin dajc{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(/alfa-slab-one/AlfaSlabOne-Regular.ttf);
+  }
+  /*Media Queiries pour Desktop*/
+  @media screen and (min-width:1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: $bodycolor;
+    background-size: cover;
+    z-index: -1;
+  }
+  header{
+    background-color: $headercolor;
+    height: 50px;
+    padding: 10px;
+  }
+  header h1 {
+    color: $textcolor;
+    font-family: myfont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; 
+  }
+  .navbar{
+      background-color: $headercolor;
+      height: 50px;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1rem;
+    transition:1s ease-in-out;
+  }
+  .navbar a:hover{
+    text-decoration:overline;
+    font-family: myfont;
+    color: $textcolor;
+    transition: 0.6s ease-in;
+  }
+  .firstpage img{
+      width: 100%;
+  }
+  .present {
+    color:$textcolor;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: -1% 20% 1% 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+  .present p{
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: bold;
+    color: $textcolor;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 40px;
+  }
+  main button{
+      background-color: $headercolor;
+      color: $textcolor;
+      border-radius: 10px;
+      font-family: myfont;
+      width: 160px;
+      height: 60px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+  }
+  footer{
+    background-color: $footercolor;
+    height: 100%;
+    padding: 5px;
+    opacity: 0.9;
+  }
+  
+  footer a {
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    font-family: Arial;
+    text-decoration: none;
+    transition: color .3s;
+    
+  }
+  
+  footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    line-height: 19px;
+  }
+  
+  footer nav a:hover {
+    color: #cf4a11;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+  
+  footer p {
+    padding: 1px;
+    margin-left: 1px;
+    margin-top: -40px;
+  }
+  #icon2 img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  
+  #icon2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    margin-top: -52px;
+  }
+}
+/*Media queries pour mobile et tablettes$*/
+  
+@media only screen and (max-width:1023px){
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: $bodycolor;
+        background-size: cover;
+        z-index: -1;
+      }
+      header{
+        background-color: $headercolor;
+        height: 35px;
+        padding: 10px;
+      }
+      header h1 {
+        color: $textcolor;
+        font-family: myfont;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem; 
+      }
+      .navbar{
+          background-color: $headercolor;
+          height: 50px;
+      }
+      .navbar a{
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 1rem;
+        transition:1s ease-in-out;
+      }
+      .firstpage img{
+          width: 100%;
+          display: none;
+      }
+      .mobilpage img{
+          width: 300px;
+          height: 300px;
+      }
+      .present {
+        color:$textcolor;
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+        margin: -1% 20% 1% 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+      }
+      .present p{
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-weight: bold;
+        color: $textcolor;
+        font-family: Arial;
+        text-align: center;
+        margin-top: 40px;
+      }
+      main button{
+          background-color: $headercolor;
+          color: $textcolor;
+          border-radius: 10px;
+          font-family: myfont;
+          width: 160px;
+          height: 60px;
+          margin-top: 30px;
+          margin-bottom: 50px;
+      }
+      footer{
+        background-color: $footercolor;
+        height: 100%;
+        padding: 5px;
+        opacity: 0.9;
+      }
+      
+      footer a {
+        color: white;
+        font-weight: bold;
+        font-size: small;
+        font-family: Arial;
+        text-decoration: none;
+        transition: color .3s;
+        
+      }
+      
+      footer nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        line-height: 19px;
+        font-size: 5px;
+        margin-bottom: -20px;
+      }
+      
+      footer nav a:hover {
+        color: #cf4a11;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+      }
+      
+      footer p {
+        padding: 1px;
+        margin-left: 1px;
+        margin-bottom: -5px;
+        font-size: 10px;
+      }
+      #icon2 img {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+      }
+      
+      #icon2 {
+        display: none;
+      }
+}
+
+    /*# sourceMappingURL=style.css.map */
