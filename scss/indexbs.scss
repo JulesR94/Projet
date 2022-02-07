@@ -57,6 +57,9 @@ $footercolor:#636363;
   .firstpage img{
       width: 100%;
   }
+  .mobilpage{
+    display: none;
+  }
   .present {
     color:$textcolor;
     font-family: Arial;
@@ -112,6 +115,7 @@ $footercolor:#636363;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
     line-height: 19px;
   }
